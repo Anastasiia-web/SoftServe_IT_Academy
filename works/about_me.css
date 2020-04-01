@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    overflow: hidden;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(photo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 140%;
+}
+header {
+    display: flex;
+    position: absolute;
+    margin-top: 50px;
+    width: 100vw;
+    height: 10vh;
+    font-size: 5em;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    white-space: pre;
+    background: linear-gradient(170deg,#3f2201 10%, #5a3101 20%, #3a1d01f8 20%, #d8802ff8 40%, #af6621f8 60%, #c05f04f8 70%,
+    #613f01 80%, #3f2201 100%, #291702 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.main {
+    display: flex;
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 240px;
+    height: 54vh;
+    width: 25vw;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+}
+.contacts {
+    display: flex;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 575px;
+    width: 100vw;
+    height: 10vh;
+    font-size: 1em;
+    font-style: italic;
+    line-height: 1.5em;
+    color: #3d2101;
+}
+.button {
+    background: linear-gradient(160deg,#3f2201 25%, #5a3101 25%, #d89251f8 30%, #dd8c41f8 60%,
+    #3d2304 100%);
+    box-shadow: 
+    3px -3px 3px 1px rgb(99, 72, 13),
+    inset 7px 15px 20px 3px #854803;
+    border: 1px solid   rgb(123, 209, 205);
+    border-radius: 5% 5%;
+    width: 85px;
+    height: 25px;
+    color: #291601;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-right: 13px;
+    padding-left: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.button:hover {
+    background:  rgb(123, 209, 205);
+    box-shadow: 
+    5px -5px 6px 1px rgb(99, 72, 13),
+    inset 7px 15px 20px 3px rgb(123, 209, 205);
+    text-transform: uppercase;
+}
+.course {
+    display: flex;
+    position: absolute;
+    margin-left: 45px;
+    margin-top: -150px;
+    width: 25vw;
+    height: 10vh;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    white-space: pre;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    color: #3d2101;
+}
