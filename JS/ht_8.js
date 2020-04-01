@@ -1,4 +1,5 @@
 /*РЕШЕНИЯ*/
+alert('Great to see you) Ready to answer some questions? Go!');
 alert('TASKS 1 and 2');
 let name = prompt('What is your name?');
 alert('Hi '+ name);
