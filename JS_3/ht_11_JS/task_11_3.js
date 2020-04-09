@@ -1,6 +1,5 @@
 // The task 3: return the shortest word in the sentence
-//READY!
-/*
+
 const findShortestWord = function(str) {
 let symbols = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-.\/:;<=>?@\[\]^_`{|}~]/g;
 let clean = str.replace(symbols, '')
@@ -17,8 +16,6 @@ let sentence = prompt('Type any sentence!')
 let n = findShortestWord(sentence);
 alert(`The shortest word in the sentence is ' ${findShortestWord(sentence)} '. 
 It's length is ${n.length}.`);
-*/
-
 
 /* МОЁ ГОТОВО ДЛЯ 1 ЦИКЛА 
 let s = 'What a suprize for me!'
