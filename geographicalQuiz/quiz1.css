@@ -73,12 +73,10 @@ body {
 .option3 {
     grid-area: 8 / 8;
 }
-.your_answer {
+.answer {
     grid-area: 10 / 4;
     display: flex;
     align-items: flex-start;
-}
-.dropbtn {
     width: 17vw;
     height: 5vh;
     background-color: white;
@@ -89,47 +87,7 @@ body {
     cursor: pointer;
     border: 2px solid rgb(79, 209, 241);
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 
-    0.1px 0.1px 2px rgb(60, 212, 218),
-    -0.1px 0px 2px rgb(60, 212, 218);
-    z-index: 1;
-    border-color: 2px solid  rgb(60, 212, 218);
-}
-.dropdown-content a {
-    color: rgb(6, 3, 172);
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {
-    background-color: white;
-    cursor: pointer;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-    width: 17vw;
-    cursor: pointer;
-    background-color:white;
-    color: rgb(6, 3, 172);
-    text-align: center;
-}
-#c:hover, #d:hover, #e:hover {
-    font-weight: bold;
-    background-color: rgb(207, 253, 247);
-    color: rgb(6, 6, 180);
-    font-size: 1em;
-    text-align: center;
-}
-.score {
+#score {
     grid-area: 10 / 6;
     display: flex;
     flex-direction: column;
@@ -142,7 +100,6 @@ body {
     color: rgb(5, 4, 112);
     font-size: 0.8em;
     font-weight: bold;
-    cursor: pointer;
 }
 .correct_answer {
     grid-area: 10 / 8;

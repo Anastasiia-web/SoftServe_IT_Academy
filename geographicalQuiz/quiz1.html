@@ -25,19 +25,15 @@
     <div class="option3"> 
         <span><b> 3. </b> Eleven countries: Tanzania, Uganda, Rwanda, Burundi, the Democratic Republic of the Congo, Kenya, Ethiopia, Nigeria, South Sudan, Republic of the Sudan, and Egypt.</span>
     </div>
-    <div class="your_answer dropdown">
-        <button class="options_to_choose dropbtn"> CHOOSE YOUR ANSWER <i class="fas fa-caret-down"></i> </button>
-        <div class="dropdown-content">
-            <option value="1" id="c"> 1 </option>
-            <option value="2" id="d"> 2 </option>
-            <option value="3" id="e"> 3 </option>
+    <div class="answer">
+            <input type="text" id="my_answer" value="" placeholder="Enter a number">
+            <button onclick="count();" id="sub">submit</button>
         </div>
     </div>
-    <div class="score">   
-        <span>YOUR SCORE</span>    
-    </div>
+    <div id="score">YOUR SCORE </div>
     <div class="correct_answer">
         <a href="correct1.html" class="button" id="correct">GO TO THE ANSWER <i class="fas fa-caret-right"></i></a>
     </div>
+    <script src="quiz.js"></script>
 </body>
 </html>

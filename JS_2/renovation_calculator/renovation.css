@@ -11,7 +11,7 @@ body {
 .picture {
     grid-area: 1 / 1;
     width: 30vw;
-    background-image: url(r2.jpg);
+    background-image: url(r_new1.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -23,11 +23,11 @@ body {
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
+    border: 1px solid black;
 }
 #name {
     margin-top: 70px;
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2em;
 }
 .picture2 {
     grid-area: 1 / 3;
