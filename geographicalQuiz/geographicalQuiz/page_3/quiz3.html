@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="back">
+        <a href="../quiz.html" class="button" id="back"> <i class="fas fa-angle-double-left"></i> BACK </a>
+    </div>
+    <div class="next_question">
+        <a href="../quiz.html" class="button" id="next"> NEXT <i class="fas fa-angle-double-right"></i> </a>
+    </div>
+    <div class="picture"></div>
+    <div class="question"> Which of the following is the longest rail route in the world? </div>
+    <div class="option1">
+        <span><b> 1. </b> Northern Trans - Continental Railway is the longest rail route in the world. </span>
+    </div>
+    <div class="option2">
+        <span><b> 2. </b> Orient - Express Railway is the longest rail route in the world. </span>
+    </div>
+    <div class="option3"> 
+        <span><b> 3. </b> Trans - Siberian Rail Route is the longest rail route in the world. </span>
+    </div>
+    <div class="answer">
+        <input type="button" id="getAchoice" value="CHOOSE" disabled>
+        <select name="first" id="my_answer3">
+            <option value="1" id="choice_option"> 1 </option>
+            <option value="2" id="choice_option"> 2 </option>
+            <option value="3" id="choice_option"> 3 </option>
+        </select>
+            <button onclick="count3();" id="sub_button"> SUBMIT </button>
+    </div>
+    <div id="total_score">
+        <div id="your_score"> YOUR SCORE </div>
+        <div id="number"></div>
+    </div>
+    <div class="correct_answer">
+        <a href="correct3.html" class="button" id="correct"> GO TO THE ANSWER <i class="fas fa-caret-right"></i></a>
+    </div>
+    <script src="../quiz.js"></script>
+</body>
+</html>

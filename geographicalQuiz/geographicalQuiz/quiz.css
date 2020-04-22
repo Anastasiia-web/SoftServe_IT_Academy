@@ -4,60 +4,55 @@ body {
    height: 100vh;
     margin: 0;
     overflow: hidden; 
-    grid-template: 1fr 2fr 2fr 1fr 1fr 1fr 1fr 0.5fr / 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 2fr 0.5fr 1fr 1fr 0.5fr;
+    grid-template: 20px 12% 30% 30% 22% 40px / 20px 19.4% 19.4% 8.4% 30.4% 19.4% 20px;
 }
 .north_america{
-    grid-area: 2 / 2 / 4 / 3;
-    width: 25vw;
-    height: 20vh;
-    margin-top: -2em;
-    margin-left: -1.9em;
+    grid-area: 3 / 2;  
 }
 #na {
     display: block;
-    background-image: url(na2.jpg);
+    background-image: url(img/naPhotopea1.png);
     background-repeat: no-repeat;
-    width: 25vw;
-    height: 45vh;
+    width: 28vw;
+    height: 46vh;
     background-size: 80% 100%;  
     border: 1px solid transparent;
+    margin-top: -2em;
+    margin-left: 1em;
 }
 #na:hover {
     width: 30vw;
     height: 50vh;
-    border: 1px solid transparent;
-    margin-top: -2em;
+    border: 1px solid transparent;   
 }
 .south_america {
-    grid-area: 4 / 3 / 6 / 4;
-    width: 16vw;
-    height: 16vh;
-    margin-left: -8em;
-    margin-top: 2.5em;
+    grid-area: 4 / 3;   
 }
 #sa {
     display: block;
-    background-image: url(sa2.jpg);
+    background-image: url(img/sa_photopea.png);
     background-repeat: no-repeat;
     width: 16vw;
     height: 41vh;
     background-size: 80% 100%;  
     border: 1px solid transparent;
+    margin-top: 5em;
+    margin-left: -1em;
+
 }
 #sa:hover {
     width: 21vw;
     height: 46vh;
     border: 1px solid transparent;
+    margin-top: 3em;
+    
 }
 .eurasia {
-    grid-area: 2 / 5 / 4 /10;
-    width: 43vw;
-    height: 48vh;
-    margin-left: 5em;
+    grid-area: 3 / 5;
 }
 #ea {
     display: block;
-    background-image: url(ea2.jpg);
+    background-image: url(img/ea_photopea.png);
     background-repeat: no-repeat;
     width: 43vw;
     height: 47vh;
@@ -68,68 +63,65 @@ body {
     width: 48vw;
     height: 50vh;
     border: 1px solid transparent;
-    margin-left: 1em;
+ 
 }
 .africa {
-    grid-area: 4 / 4 / 6 / 6;
-    width: 20vw;
-    height: 20vh;
-    margin-top: -3em;
-    margin-left: 3em;
+    grid-area: 4 / 4;
 }
 #af {
     display: block;
-    background-image: url(afr2.jpg);
+    background-image: url(img/afrPhotopea.png);
     background-repeat: no-repeat;
     width: 20vw;
     height: 45vh;
     background-size: 80% 100%;  
     border: 1px solid transparent;
+    margin-top: -0.5em;
+    margin-left: 0.5em;
 }
 #af:hover {
     width: 25vw;
     height: 50vh;
     border: 1px solid transparent;
-    margin-left: -4em;
+    margin-left: -3em;
+    margin-top: -3em;
+    
 }
 .ausralia {
-    grid-area: 6 / 10 / 6 / 10;
-    width: 10vw;
-    height: 23vh;
-    margin-left: -2em;
+    grid-area: 5 / 6;
 }
 #av {
     display: block;
-    background-image: url(avs2.jpg);
+    background-image: url(img/avs_photopea.png);
     background-repeat: no-repeat;
     width: 25vw;
     height: 23vh;
     background-size: 50% 100%;
     border: 1px solid transparent;
+    margin-top: -3em;
+    margin-left: 5em;
 }
 #av:hover {
     width: 30vw;
     height: 27vh;
-    border: 1px solid transparent;
-    margin-left: -2em;
+    border: 1px solid transparent; 
+    margin-left: 2em;
 }
 .rules {
-    grid-area: 2 / 3 / 1 / 8;
+    grid-area: 2 / 1 / 2 / 8;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 #name {
     display: block;
-    padding-top: 15px;
     font-size: 1.6em;
     font-weight: bold;
 }
 #instruction {
     display: block;
-    margin-top: 10px;
+    line-height: 1.8em;
     font-size: 1em; 
-    line-height: 0.9em;
 }

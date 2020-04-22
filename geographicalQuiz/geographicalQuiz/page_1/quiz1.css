@@ -4,7 +4,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: white;
-    grid-template: 0.3fr 1fr 0.5fr 4fr 0.3fr 1fr 0.3fr 3fr 0.3fr 1fr 1fr/ 1fr 1fr 1fr 2fr 0.5fr 2fr 0.5fr 2fr 1fr 1fr 1fr;
+    grid-template: 0.3fr 1fr 0.5fr 4.5fr 0.1fr 0.5fr 0.1fr 2.5fr 0.3fr 1fr 0.7fr/ 1fr 1fr 1fr 2fr 0.5fr 2fr 0.5fr 2fr 1fr 1fr 1fr;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
@@ -40,7 +40,7 @@ body {
 }
 .picture {
     grid-area: 2 / 4 / 6 / 9 ;
-    background-image: url(nile.jpg);
+    background-image: url(../img/nile.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -52,7 +52,7 @@ body {
     justify-content: center;
     font-size: 1.7em;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .option1, .option2, .option3 {
     grid-area: 8 / 4;
@@ -73,33 +73,53 @@ body {
 .option3 {
     grid-area: 8 / 8;
 }
-.answer {
+.answer{
     grid-area: 10 / 4;
-    display: flex;
-    align-items: flex-start;
     width: 17vw;
-    height: 5vh;
+    height: 4.5vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    border: 2px solid rgb(79, 209, 241);
+}
+#getAchoice {
+    width: 7vw;
+    height: 4.5vh;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(5, 4, 112);
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+#my_answer {
+    width: 3vw;
+    height: 4.5vh;
     background-color: white;
     color: rgb(5, 4, 112);
-    padding: 5px;
     font-size: 0.8em;
     font-weight: bold;
     cursor: pointer;
-    border: 2px solid rgb(79, 209, 241);
+    border-left: 2px solid rgb(60, 212, 218);
+    border-right: 2px solid rgb(60, 212, 218);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 }
-#score {
-    grid-area: 10 / 6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    padding-top: 7px;
-    border: 2px solid rgb(60, 212, 218);
-    width: 17vw;
-    height: 3.5vh;
+#sub_button {
+    width: 7vw;
+    height: 4.5vh;
+    background-color: white;
     color: rgb(5, 4, 112);
     font-size: 0.8em;
     font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+#sub_button:hover {
+    box-shadow: 
+    inset
+    5px 5px 10px 20px rgb(147, 242, 245);  
 }
 .correct_answer {
     grid-area: 10 / 8;
@@ -117,4 +137,46 @@ body {
     border: 2px solid  rgb(60, 212, 218);
     font-size: 0.8em;
     color: rgb(5, 4, 112);
+    transition: background-color 10s;
+}
+#total_score {
+    grid-area: 10 / 6;
+    display: flex;
+    width: 17vw;
+    height: 4.5vh;
+    flex-direction: raw;
+    align-items: center;
+    align-content: center;
+    border: 2px solid rgb(60, 212, 218);
+    color: rgb(5, 4, 112);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#your_score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 4.5vh;
+    background-color: white;
+    color: rgb(5, 4, 112);
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold; 
+    border: 2px solid rgb(60, 212, 218);
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+#number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 4.5vh;
+    background-color: white;
+    color: rgb(5, 4, 112);
+    font-size: 0.9em;
+    font-weight: bold;
+    border-left: 2px solid rgb(60, 212, 218);
+    text-align: center;
 }

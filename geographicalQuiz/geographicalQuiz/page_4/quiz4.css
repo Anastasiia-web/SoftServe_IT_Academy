@@ -4,7 +4,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: white;
-    grid-template: 0.3fr 1fr 0.5fr 4.5fr 0.3fr 1fr 0.3fr 2.3fr 1fr 0.3fr 0.7fr/ 1fr 1fr 1fr 2fr 0.5fr 2fr 0.5fr 2fr 1fr 1fr 1fr;
+    grid-template: 0.3fr 1fr 0.5fr 5fr 0.3fr 1fr 0.3fr 2.3fr 1fr 0.7fr/ 1fr 1fr 1fr 2fr 0.5fr 2fr 0.5fr 2fr 1fr 1fr 1fr;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
@@ -40,7 +40,7 @@ body {
 }
 .picture {
     grid-area: 2 / 4 / 6 / 9 ;
-    background-image: url(sa_w.jpg);
+    background-image: url(../img/na_r.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -50,9 +50,10 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 1.7em;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .option1, .option2, .option3 {
     grid-area: 8 / 4;
@@ -73,76 +74,52 @@ body {
 .option3 {
     grid-area: 8 / 8;
 }
-.your_answer {
+.answer{
     grid-area: 9 / 4;
-    display: flex;
-    align-items: flex-start;
-}
-.dropbtn {
     width: 17vw;
-    height: 5vh;
-    background-color: white;
-    color: rgb(5, 4, 112);
-    padding: 5px;
-    font-size: 0.8em;
-    font-weight: bold;
-    cursor: pointer;
+    height: 4.5vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
     border: 2px solid rgb(79, 209, 241);
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 
-    0.1px 0.1px 2px rgb(60, 212, 218),
-    -0.1px 0px 2px rgb(60, 212, 218);
-    z-index: 1;
-    border-color: 2px solid  rgb(60, 212, 218);
-}
-.dropdown-content a {
-    color: rgb(6, 3, 172);
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {
+#getAchoice {
+    width: 7vw;
+    height: 4.5vh;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(5, 4, 112);
+    border: 2px solid transparent;
     background-color: white;
     cursor: pointer;
 }
-.dropdown:hover .dropdown-content {
-    display: block;
-    width: 17vw;
-    cursor: pointer;
-    background-color:white;
-    color: rgb(6, 3, 172);
-    text-align: center;
-}
-#c:hover, #d:hover, #e:hover {
-    font-weight: bold;
-    background-color: rgb(207, 253, 247);
-    color: rgb(6, 6, 180);
-    font-size: 1em;
-    text-align: center;
-}
-.score {
-    grid-area: 9 / 6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    padding-top: 7px;
-    border: 2px solid rgb(60, 212, 218);
-    width: 17vw;
-    height: 3.5vh;
+#my_answer {
+    width: 3vw;
+    height: 4.5vh;
+    background-color: white;
     color: rgb(5, 4, 112);
     font-size: 0.8em;
     font-weight: bold;
     cursor: pointer;
+    border: 2px solid rgb(60, 212, 218);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+#sub_button {
+    width: 7vw;
+    height: 4.5vh;
+    background-color: white;
+    color: rgb(5, 4, 112);
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+#sub_button:hover {
+    box-shadow: 
+    inset
+    5px 5px 10px 20px rgb(147, 242, 245);  
 }
 .correct_answer {
     grid-area: 9 / 8;
@@ -160,4 +137,45 @@ body {
     border: 2px solid  rgb(60, 212, 218);
     font-size: 0.8em;
     color: rgb(5, 4, 112);
+    transition: background-color 10s;
+}
+#total_score {
+    grid-area: 9 / 6;
+    display: flex;
+    width: 17vw;
+    height: 4.5vh;
+    flex-direction: raw;
+    align-items: center;
+    align-content: center;
+    border: 2px solid rgb(60, 212, 218);
+    color: rgb(5, 4, 112);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#your_score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 4.5vh;
+    background-color: white;
+    color: rgb(5, 4, 112);
+    font-size: 0.9em;
+    font-weight: bold; 
+    border: 2px solid rgb(60, 212, 218);
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+#number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 4.5vh;
+    background-color: white;
+    color: rgb(5, 4, 112);
+    font-size: 0.9em;
+    font-weight: bold;
+    border-left: 2px solid rgb(60, 212, 218);
+    text-align: center;
 }

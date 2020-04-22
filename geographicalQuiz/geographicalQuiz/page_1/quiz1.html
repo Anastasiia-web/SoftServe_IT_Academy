@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="back">
+        <a href="../quiz.html" class="button" id="back"> <i class="fas fa-angle-double-left"></i> BACK </a>
+    </div>
+    <div class="next_question">
+        <a href="../quiz.html" class="button" id="next"> NEXT <i class="fas fa-angle-double-right"></i> </a>
+    </div>
+    <div class="picture"></div>
+    <div class="question">Which 11 countries does the river Nile flow through?</div>
+    <div class="option1">
+        <span><b> 1. </b> Tanzania, Uganda, Rwanda, Burundi, the Democratic Republic of the Congo, Kenya, Ethiopia, Eritrea, South Sudan, Republic of the Sudan, and Egypt. </span>
+    </div>
+    <div class="option2">
+        <span><b> 2. </b> Tanzania, Uganda, Rwanda, Burundi, the Democratic Republic of the Congo, Kenya, Libya, Eritrea, South Sudan, Republic of the Sudan, and Egypt. </span>
+    </div>
+    <div class="option3"> 
+        <span><b> 3. </b> Tanzania, Uganda, Rwanda, Burundi, the Democratic Republic of the Congo, Kenya, Ethiopia, Nigeria, South Sudan, Republic of the Sudan, and Egypt. </span>
+    </div>
+    <div class="answer">
+        <input type="button" id="getAchoice" value="CHOOSE">
+        <select name="first" id="my_answer">
+            <option value="1" id="choice_option"> 1 </option>
+            <option value="2" id="choice_option"> 2 </option>
+            <option value="3" id="choice_option"> 3 </option>
+        </select>
+            <button onclick="count();" id="sub_button"> SUBMIT </button>
+    </div>
+    <div id="total_score">
+        <div id="your_score"> YOUR SCORE </div>
+        <div id="number"></div>
+    </div>
+    <div class="correct_answer">
+        <a href="correct1.html" class="button" id="correct"> GO TO THE ANSWER <i class="fas fa-caret-right"></i></a>
+    </div>
+    <script src="../quiz.js"></script>
+</body>
+</html>
