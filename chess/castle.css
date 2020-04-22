@@ -1,0 +1,60 @@
+@keyframes animeCastle {
+    0% {
+        background-color: blueviolet;
+    }
+    50% {
+        background-color: cornflowerblue;
+    }
+    100% {
+        background-color: grey;
+    }
+}
+.castle {
+    width: 44px;
+    height: 65px;
+    position: relative;
+    top: 28px;
+    left: 22px;
+    animation: animeCastle 10s infinite alternate;
+    transition:  5s transform;
+}
+.castle:hover {
+    transform: rotate(90deg)
+}
+.castle.black {
+    background-color: black;
+}
+.castle.white {
+    background-color: goldenrod;
+}
+.castle::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 10px;
+    position: relative;
+    top: 56px;
+    left: -13px;
+}
+.black.castle::before {
+    background-color: black;
+}
+.white.castle::before {
+    background-color: goldenrod;
+}
+.castle::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 10px;
+    border-radius: 20%;
+    position: relative;
+    top: 4px;
+    left: -6px;
+}
+.black.castle::after {
+    background-color: black;
+}
+.white.castle::after {
+    background-color: goldenrod;
+}

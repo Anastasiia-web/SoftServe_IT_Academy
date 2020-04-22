@@ -1,0 +1,23 @@
+@import "king.css";
+@import "queen.css";
+@import "bishop.css";
+@import "knight.css";
+@import "castle.css";
+@import "pawn.css";
+.row {
+    font-size: 0;
+}
+.space {
+    background-color: cornsilk;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border: 3px solid transparent;
+    transition: 1s border-color;
+}
+.space:hover {
+    border-color: red;
+}
+.bl {
+    background-color: brown;
+}

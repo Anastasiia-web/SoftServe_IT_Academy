@@ -1,0 +1,58 @@
+@keyframes animeKnight {
+    0% {
+        transform: rotateX(60deg);
+    }
+    100% {
+        transform: rotateX(-60deg);
+    }
+}
+.knight {
+    width: 0px;
+    height: 0px;
+    border-bottom: 60px solid black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: relative;
+    top: 30px;
+    left: 55px;
+    transition: transform;
+}
+.knight:hover {
+    transform: rotate(180deg);
+}
+.knight.white {
+    border-bottom-color: goldenrod;
+}
+.knight::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: -12px;
+    left: -60px;
+    animation: animeKnight 5s infinite;
+}
+.knight.black::before {
+    background-color: black;
+}
+.knight.white::before {
+    background-color: goldenrod;
+}
+.knight::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: relative;
+    top: -43px;
+    left: -20px;
+    transform: skew(0,15deg);
+}
+.white.knight::after {
+    border-bottom-color: goldenrod;
+}

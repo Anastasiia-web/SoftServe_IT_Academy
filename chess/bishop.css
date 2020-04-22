@@ -1,0 +1,74 @@
+@keyframes animeBishop {
+    0%{
+       background-color: red;
+
+    }
+    30% {
+        background-color: black;
+
+    }
+    60% {
+        background-color: red;
+
+    }
+    100%{
+        background-color: black;
+}
+}
+.bishop {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid black;
+    border-left: 44px solid transparent;
+    border-right: 44px solid transparent; 
+    position: relative;
+    top: 53px;
+    left: 1px;
+}
+.left.bishop {
+    transition: 10s border-left;
+}
+.left.bishop:hover {  
+    border-left: 1px;
+}
+
+.bishop.black {
+    border-bottom-color: black;
+}
+.bishop.white {
+    border-bottom-color: goldenrod;
+}
+.bishop::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    left: -30px;
+ }
+ .black.bishop::after {
+    background-color: black;
+ }
+ .white.bishop::after {
+    background-color: goldenrod;
+ }
+ .bishop::before {
+     content: "";
+     display: block;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     position: relative;
+     top: -40px;
+     left: -13px;
+     animation: animeBishop 4s infinite;
+ }
+ .black.bishop::before {
+     background-color: black;
+ }
+ .white.bishop::before {
+     background-color: goldenrod;
+     animation-delay: 3s;
+ }
