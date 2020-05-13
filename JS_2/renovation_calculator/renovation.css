@@ -26,7 +26,7 @@ body {
     border: 1px solid black;
 }
 #name {
-    margin-top: 70px;
+    margin-top: 35px;
     font-size: 2em;
 }
 .picture2 {
@@ -81,7 +81,15 @@ body {
 #quantity {
     margin-top: 20px;
 }
+#note {
+    position: absolute;
+    top: 490px;
+    left: 440px;
+    text-align: left;
+    line-height: 1.3em;
+}
 .fa-handshake {
+    position: relative;
     font-size: 2.5em;
-    margin-top: 50px;
+    top: 120px;
 }
