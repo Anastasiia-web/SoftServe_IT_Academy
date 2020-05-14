@@ -1,10 +1,7 @@
 let number = prompt('Enter is your ticket number (xxxxxx).');
-//  N (0 ≤ N < 10 ** 6) Николай, как вписать ограничения ввода?
-
-//let number = 123456
 
 let n_000001 = number % 10
-console.log(n_000001) //6
+// console.log(n_000001) //6
 
 let n_000010 = (number % 100 - number % 10) * 0.1
 
