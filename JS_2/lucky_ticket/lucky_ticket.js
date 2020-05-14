@@ -1,17 +1,17 @@
 let number = prompt('Enter is your ticket number (xxxxxx).');
 
-let n_000001 = number % 10
+let n_000001 = number % 10;
 // console.log(n_000001) //6
 
-let n_000010 = (number % 100 - number % 10) * 0.1
+let n_000010 = (number % 100 - number % 10) * 0.1;
 
-let n_000100 = (number % 1000 - number % 100) * 0.01
+let n_000100 = (number % 1000 - number % 100) * 0.01;
 
-let n_001000 = (number % 10000 - number % 1000) * 0.001
+let n_001000 = (number % 10000 - number % 1000) * 0.001;
 
-let n_010000 = (number % 100000 - number % 10000) * 0.0001
+let n_010000 = (number % 100000 - number % 10000) * 0.0001;
 
-let n_100000 = (number % 1000000 - number % 100000) * 0.00001
+let n_100000 = (number % 1000000 - number % 100000) * 0.00001;
 
 let number_sum_left_side = n_100000 + n_010000 + n_001000;
 
