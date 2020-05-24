@@ -1,7 +1,7 @@
 body {
     display: grid;
     width: 100vw;
-   height: 100vh;
+    height: 100vh;
     margin: 0;
     overflow: hidden; 
     grid-template: 20px 12% 30% 30% 22% 40px / 20px 19.4% 19.4% 8.4% 30.4% 19.4% 20px;
@@ -38,14 +38,12 @@ body {
     border: 1px solid transparent;
     margin-top: 5em;
     margin-left: -1em;
-
 }
 #sa:hover {
     width: 21vw;
     height: 46vh;
     border: 1px solid transparent;
-    margin-top: 3em;
-    
+    margin-top: 3em; 
 }
 .eurasia {
     grid-area: 3 / 5;
@@ -63,7 +61,6 @@ body {
     width: 48vw;
     height: 50vh;
     border: 1px solid transparent;
- 
 }
 .africa {
     grid-area: 4 / 4;
@@ -84,8 +81,7 @@ body {
     height: 50vh;
     border: 1px solid transparent;
     margin-left: -3em;
-    margin-top: -3em;
-    
+    margin-top: -3em; 
 }
 .ausralia {
     grid-area: 5 / 6;
